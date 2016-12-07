@@ -1,0 +1,74 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!--
+* ThesisNg - Angular Thesis
+* Version 0.1
+*
+-->
+
+<!DOCTYPE html>
+<html ng-app="apoxcrm">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Page title set in pageTitle directive -->
+        <title page-title></title>
+
+        <environment names="Development,Staging,Production">
+            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+            <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
+            <link rel="stylesheet" href="~/lib/metisMenu/dist/metisMenu.min.css" />
+            <link rel="stylesheet" href="~/lib/animate-css/animate.css" />
+            <link rel="stylesheet" href="~/lib/angular-ui-grid/ui-grid.css" />
+            <link rel="stylesheet" href="http://cdn3.devexpress.com/jslib/15.2.9/css/dx.common.css">
+            <link rel="stylesheet" href="http://cdn3.devexpress.com/jslib/15.2.9/css/dx.light.css">
+            <link rel="stylesheet" href="~/css/style.css" />
+        </environment>
+
+    </head>
+
+    <body>
+        <!-- Main Angular View -->
+        <div ui-view></div>
+
+        <!-- Dependancies -->
+        <environment names="Development,Staging,Production">
+            <!-- INSPINIA TEMPLATE Dependancies from bower lib-->
+            <script src="~/lib/jquery/dist/jquery.min.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script src="~/lib/metisMenu/dist/metisMenu.min.js"></script>
+            <script src="~/lib/pace/pace.min.js"></script>
+            <script src="~/lib/slimScroll/jquery.slimscroll.min.js"></script>
+            <!-- Angular App Dependancies from bower lib-->
+            <script src="~/lib/angular/angular.js"></script>
+            <script src="~/lib/angular-ui-router/release/angular-ui-router.js"></script>
+            <script src="~/lib/ocLazyLoad/dist/ocLazyLoad.js"></script>
+            <script src="~/lib/angular-ui-grid/ui-grid.js"></script>
+            <!-- Angular App Dependancies from cdn-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.js"></script>
+            <!-- Angular/DevExtreme App Dependancies from cdn- -->
+            <script src="~/lib/jquery/dist/jquery.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-sanitize.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/globalize/0.1.1/globalize.min.js"></script>
+            <script src="http://cdn3.devexpress.com/jslib/15.2.9/js/dx.all.js"></script>
+            <!-- Angular App Script -->
+            <script src="~/app/app.js"></script>
+            <script src="~/app/config.js"></script>
+            <script src="~/app/services/coredapperSrvc.js"></script>
+            <script src="~/app/directives/directives.js"></script>
+            <script src="~/app/controllers/mainCtrl.js"></script>
+            <script src="~/app/controllers/dxGridController.js"></script>
+            <script src="~/app/directives/controls/simpleControls.js"></script>
+            <!-- INSPINIA TEMPLATE Dependancies Castum, has custom changes from INSPINIA template on metisMenu,bootstrap,slimscroll-->
+            <script src="~/App/assets/bootstrap/bootstrap.js"></script>
+            <script src="~/App/assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+            <script src="~/App/assets/plugins/slimscroll/jquery.slimscroll.js"></script>
+            <script src="~/js/script_ins.js"></script>
+        </environment>
+    </body>
+</html>
+
